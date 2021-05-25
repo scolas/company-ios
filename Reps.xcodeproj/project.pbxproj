@@ -39,7 +39,11 @@
 		D22D900C26115FCB00C29663 /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22D900B26115FCB00C29663 /* AnalyticsManager.swift */; };
 		D22D900F26115FDB00C29663 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22D900E26115FDB00C29663 /* HapticsManager.swift */; };
 		D22D901226115FEC00C29663 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22D901126115FEC00C29663 /* DatabaseManager.swift */; };
+		D279D24C2657608900ABDDC6 /* CompanyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D279D24B2657608900ABDDC6 /* CompanyProfileViewController.swift */; };
 		D27CE29C261AA2E70002F225 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D27CE29B261AA2E70002F225 /* GoogleService-Info.plist */; };
+		D294F6BB264F673900FC5A79 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = D294F6BA264F673900FC5A79 /* Company.swift */; };
+		D294F6BF264F6A2B00FC5A79 /* CompanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D294F6BE264F6A2B00FC5A79 /* CompanyTableViewCell.swift */; };
+		D294F6C2264F6BA800FC5A79 /* CompanyCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D294F6C1264F6BA800FC5A79 /* CompanyCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,7 +82,11 @@
 		D22D900B26115FCB00C29663 /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
 		D22D900E26115FDB00C29663 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
 		D22D901126115FEC00C29663 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		D279D24B2657608900ABDDC6 /* CompanyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CompanyProfileViewController.swift; path = Controllers/Other/CompanyProfileViewController.swift; sourceTree = SOURCE_ROOT; };
 		D27CE29B261AA2E70002F225 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D294F6BA264F673900FC5A79 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		D294F6BE264F6A2B00FC5A79 /* CompanyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyTableViewCell.swift; sourceTree = "<group>"; };
+		D294F6C1264F6BA800FC5A79 /* CompanyCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyCellViewModel.swift; sourceTree = "<group>"; };
 		EEFB037A1E94FB033F9F2491 /* Pods-Reps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reps.release.xcconfig"; path = "Target Support Files/Pods-Reps/Pods-Reps.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,6 +167,7 @@
 				D225EA9C261A1044004AAB80 /* Post.swift */,
 				D225EA9D261A1044004AAB80 /* Relationship.swift */,
 				D225EA9E261A1044004AAB80 /* User.swift */,
+				D294F6BA264F673900FC5A79 /* Company.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -166,6 +175,7 @@
 		D22D8FB1261159EF00C29663 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D294F6BD264F69A600FC5A79 /* Home Cells */,
 				D22D8FA5261159CD00C29663 /* LaunchScreen.storyboard */,
 				D225EAA7261A1110004AAB80 /* IGTextField.swift */,
 				D225EAA8261A1110004AAB80 /* SignInHeaderView.swift */,
@@ -176,6 +186,7 @@
 		D22D8FB2261159F400C29663 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				D294F6C1264F6BA800FC5A79 /* CompanyCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -216,6 +227,7 @@
 				D22D8FEF26115E7800C29663 /* SearchViewController.swift */,
 				D22D8FF226115E9000C29663 /* MessagesViewController.swift */,
 				D22D8FF626115ED100C29663 /* TabBarViewController.swift */,
+				D279D24B2657608900ABDDC6 /* CompanyProfileViewController.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -231,6 +243,14 @@
 				D22D900226115F3C00C29663 /* SettingsViewController.swift */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		D294F6BD264F69A600FC5A79 /* Home Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D294F6BE264F6A2B00FC5A79 /* CompanyTableViewCell.swift */,
+			);
+			path = "Home Cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,6 +372,7 @@
 				D225EAA1261A1044004AAB80 /* Relationship.swift in Sources */,
 				D22D900C26115FCB00C29663 /* AnalyticsManager.swift in Sources */,
 				D22D901226115FEC00C29663 /* DatabaseManager.swift in Sources */,
+				D294F6BF264F6A2B00FC5A79 /* CompanyTableViewCell.swift in Sources */,
 				D22D900F26115FDB00C29663 /* HapticsManager.swift in Sources */,
 				D225EAA0261A1044004AAB80 /* Post.swift in Sources */,
 				D225EA9F261A1044004AAB80 /* Notification.swift in Sources */,
@@ -370,6 +391,9 @@
 				D22D8FFC26115F1900C29663 /* SignInViewController.swift in Sources */,
 				D22D8FF726115ED100C29663 /* TabBarViewController.swift in Sources */,
 				D225EAA9261A1110004AAB80 /* IGTextField.swift in Sources */,
+				D279D24C2657608900ABDDC6 /* CompanyProfileViewController.swift in Sources */,
+				D294F6C2264F6BA800FC5A79 /* CompanyCellViewModel.swift in Sources */,
+				D294F6BB264F673900FC5A79 /* Company.swift in Sources */,
 				D22D900026115F2D00C29663 /* SignUpViewController.swift in Sources */,
 				D225EAA5261A1093004AAB80 /* Extensions.swift in Sources */,
 				D22D900626115FA000C29663 /* AuthManager.swift in Sources */,
